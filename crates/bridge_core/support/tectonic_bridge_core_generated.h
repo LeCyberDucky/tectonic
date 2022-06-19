@@ -334,6 +334,8 @@ void ttbc_diag_finish(ttbc_state_t *es, ttbc_diagnostic_t *diag);
  */
 int ttbc_shell_escape(ttbc_state_t *es, const uint16_t *cmd, size_t len);
 
+ttbc_input_handle_t *ttbc_input_pipe_open(ttbc_state_t *es, const uint16_t *cmd, size_t len);
+
 #ifdef __cplusplus
 } // extern "C"
 #endif // __cplusplus

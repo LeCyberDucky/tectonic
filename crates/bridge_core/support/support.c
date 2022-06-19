@@ -318,3 +318,9 @@ ttstub_shell_escape(const unsigned short *cmd, size_t len)
 {
     return ttbc_shell_escape(tectonic_global_bridge_core, cmd, len);
 }
+
+rust_input_handle_t
+ttstub_input_pipe_open(const unsigned short *cmd, size_t len)
+{
+    return ttbc_input_pipe_open(tectonic_global_bridge_core, cmd, len);
+}
