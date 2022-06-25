@@ -153,7 +153,7 @@ impl TexEngine {
     /// Sets the date and time used by the TeX engine. This affects things like
     /// LaTeX's \today command.
     ///
-    /// The default vaue is the Unix epoch, so you should almost always override
+    /// The default value is the Unix epoch, so you should almost always override
     /// this setting. If you are aiming to achieve reproducible builds, you will
     /// need a way to fix this parameter from one engine invocation to the next.
     pub fn build_date(&mut self, date: SystemTime) -> &mut Self {

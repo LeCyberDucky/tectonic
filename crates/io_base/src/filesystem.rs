@@ -21,7 +21,7 @@ use super::{
 /// FilesystemPrimaryInputIo is an I/O provider that provides the TeX "primary input"
 /// file off of the filesystem. This can *pretty much* be achieved with
 /// Filesystem I/O, but we need the "primary input" formalism to decently support
-/// processing if stdin, and by doing things this way we can handle paths on
+/// processing of stdin, and by doing things this way we can handle paths on
 /// Unix systems that can't be converted to UTF-8.
 ///
 /// TODO: it might be technically superior to open the path immediately and
